@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Projeto 2</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img id="imgLogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/81/UOL_logo_old.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+
+           <button class="btn btn-primary" type="submit">
+              Pesquisar
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- fim menu -->
+
+  <!-- inicio carrossel -->
+  <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img
+          src="https://media.istockphoto.com/id/2012883461/pt/foto/ai-data-analysis-business-people-use-ai-to-analyze-financial-related-data-big-data-complex.webp?a=1&b=1&s=612x612&w=0&k=20&c=YRTRQyOVtWSinw-XxKaDh5PkTGoj6Aa7BurFE6Ula0I="
+          class="d-block w-100 imgCarrossel" alt="imagem1 TI">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Primeira imagem</h5>
+          <p class="subtittleCarrossel">Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img
+          src="https://media.istockphoto.com/id/2160407303/pt/foto/the-concept-of-productivity-and-production-capacity-encompasses-industrial-management-focused.webp?a=1&b=1&s=612x612&w=0&k=20&c=7mTU_WbH1FY5W3Ptnrvlfi42QYOW-Lyim_w-QDT6Tk4="
+          class="d-block w-100 imgCarrossel" alt="imagem2 TI">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Segunda imagem</h5>
+          <p class="subtittleCarrossel">Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img
+          src="https://media.istockphoto.com/id/1475998284/pt/foto/interior-of-big-modern-server-room-3d-rendering-illustration.webp?a=1&b=1&s=612x612&w=0&k=20&c=6xZcMGEUaBFheDqs5klYYcqEQnejsgWnknPEngDCzrk="
+          class="d-block w-100 imgCarrossel" alt="imagem3 TI">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="tittleCarrosel">Terceira imagem</h5>
+          <p class="subtittleCarrossel">Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- inicio card´s -->
+  <div class="titleCard">
+    <p>Seleção de ofertas para você!</p>
+  </div> <!-- novo -->
+  <div class="cardMain">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/280x210/smartphone-samsung-galaxy-s23-256gb-preto-5g-8gb-ram-61-cam-tripla-selfie-12mp/magazineluiza/232854100/e9fd12e9a66f2797bce34c5169369937.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 1</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/500x500/notebook-samsung-galaxy-book4-intel-core-i3-8gb-ram-ssd-256gb-156-full-hd-windows-11-np750xgj-kg5br/magazineluiza/238407300/b9351a5d8902e673e7ba45d4d13acc8d.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 2</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/800x560/pneu-aro-14-westlake-175-75r14pr-87t-rp18/magazineluiza/233913200/da31a4ec4e50c68e1bb734ec4e054340.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 3</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/500x500/monitor-gamer-100hz-1ms-acer-nitro-series-kg241y-ebii-238-full-hd-ips-hdmi-freesync-um-qx1aa-e02/magazineluiza/238394600/da96cc1a91d6a42d01c181fcf84f1030.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 4</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/280x210/lava-e-seca-smart-samsung-wd13t-13kg-digital-inverter-3-em-1-agua-quente-e-fria-branca/magazineluiza/237247500/16b4ce1b90f095ccd00ae90afbd79702.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 5</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="titleCard">
+    <p>Confira as melhores oferta da semana!</p>
+  </div> <!-- novo -->
+  <div class="cardMain">
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://s.mlcdn.com.br/banner/campanhas/mundoinds_hotlink_cozinha.png"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 6</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://s.mlcdn.com.br/banner/campanhas/mundoportateis_iconehomeprincipal_hotlinkv3.png"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 7</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/280x210/fritadeira-eletrica-sem-oleo-air-fryer-mondial-family-afn-40-bi-preto-4l-com-timer/magazineluiza/228887100/c8c3b47783b851f54be2594719871282.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 8</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/280x210/bola-society-topper-slick-ii-rosa/reidasbolas/8377499834/b31c99da6b55bb4b5cc7249e879ae9df.jpeg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 9</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://a-static.mlcdn.com.br/280x210/cadeira-de-escritorio-presidente-base-cromada-mb-c300-travel-max-preta-healer/devintex/20022/be9b22c7ce2ccd8ac219b3f1ee2f4d98.jpeg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Produto 10</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary btnCard">Compre agora</a>
+      </div>
+    </div>
+  </div>
+
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p>Há 40 anos a loja mais completa do Brasil.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Lider de vendas em eletroeletrônicos <cite title="Source Title">no Brasil</cite>
+    </figcaption>
+  </figure>
+
+  <!-- footer -->
+  <footer class="text-center bg-body-tertiary p-5">
+    <img id="imgLogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/81/UOL_logo_old.png" alt="" />
+  
+          <p class="mt-2">A loja on-line mais famosa do Brasil</p>
+          <p class="mt-2 fw-bold">Contato: 32-2542-0392</p>
+          <p class="mt-2">@Lojinhaonline</p>
+  </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
